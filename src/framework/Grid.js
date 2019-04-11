@@ -111,6 +111,19 @@ class Grid extends Component {
 
     componentDidMount(){
         this.initAudio();
+        // this.state.grid();
+    }
+
+    generateCorrectPath() {
+        let songLength = 14;
+        let correctPath = new Array(14);
+
+        correctPath[0] = new GridCell(this.getPlayer.getPlayerPosition());
+        for (let i = 1; i < songLength; i++) {
+            
+        }
+        
+        return correctPath;
     }
 
     findMatchingSprite = (x, y) => {
